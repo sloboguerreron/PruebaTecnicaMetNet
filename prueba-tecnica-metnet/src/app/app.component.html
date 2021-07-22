@@ -13,22 +13,25 @@
     <div class="example-container">
       <mat-card>
         <form>
+
           <mat-form-field appearance="fill">
-            <select name="select">
-              <option value="value1">Value 1</option>
-              <option value="value2" selected>Value 2</option>
-              <option value="value3">Value 3</option>
+            <select name="select" >
+              <option *ngFor="let oferta of Ofertas" >{{oferta.versions.id}}</option>
             </select>
           </mat-form-field>
 
           <mat-form-field appearance="fill">
-            <mat-label>Both a label and a placeholder</mat-label>
-            <input matInput placeholder="Simple placeholder">
+            <h4>ID Oferta :</h4>
+            <mat-label>ID Oferta:</mat-label>
+            <input matInput placeholder="ID oferta">
           </mat-form-field>
+
           <mat-form-field appearance="fill">
-            <mat-label>Both a label and a placeholder</mat-label>
-            <input matInput placeholder="Simple placeholder">
+            <h4>Nombre :</h4>
+            <mat-label>Nombre</mat-label>
+            <input matInput placeholder="Nombre">
           </mat-form-field>
+
         </form>
       </mat-card>
     </div>

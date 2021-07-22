@@ -33,4 +33,8 @@ export class AppComponent {
   displayedColumns: string[] = ['caracteristicas'];
   displayedColumns2: string[] = ['nombrePrecio', 'monto'];
   dataSource = ELEMENT_DATA;
+
+ /* selectOferta() {
+
+  }*/
 }
